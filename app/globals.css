@@ -1,0 +1,50 @@
+@import "tailwindcss";
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent page overflow */
+}
+
+body {
+  background-image: url('/images/bg.jpg'); /* Ensure the image is in the public folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+html, body {
+  /* Remove overflow-hidden if present */
+  overflow: visible !important;
+}
+
+
+.glass {
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Glass-like border */
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 3D shadow */
+}
+
+.glass_red {
+  background: rgba(255, 0, 0, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Glass-like border */
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 3D shadow */
+}
+
+
